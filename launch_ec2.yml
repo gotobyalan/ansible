@@ -9,5 +9,4 @@
            instance_type: t2.micro
            image: ami-002cdac160d085b42
            region: us-east-1
-           aws_access_key: AKIAVUDWWFATRKLZIQNE
-           aws_secret_key: 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
+            
