@@ -3,10 +3,14 @@
     hosts: localhost
     connection: local
     gather_facts: false
+    vars_files: 
+      - ../private/awssecretkey.yml
+
     tasks:
       - name: Simple task to launch ec2 instance with default values
         ec2: 
            instance_type: t2.micro
            image: ami-002cdac160d085b42
            region: us-east-1
-            
+           aws_access_key: "{{ key }}"
+           aws_secret_key: "{{ secret }}"
