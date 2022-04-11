@@ -1,0 +1,9 @@
+---
+- hosts: web_servers
+  gather_facts: true
+  tasks:
+    - debug:
+       msg: 
+          - "{{ ansible_architecture }}"
+          - "{{ ansible_os_family }}"
+          - "{{ ansible_distribution_version }}"

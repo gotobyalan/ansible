@@ -1,0 +1,10 @@
+---
+  - hosts: web_servers
+    gather_facts: false
+    become: yes
+    tasks:
+      - local_action: shell 'uptime'
+        register: up_time
+        #delegate_to: localhost
+        #delegate_to: x.x.x.x 
+      - debug: var=up_time.stdout
