@@ -1,0 +1,15 @@
+---
+  - hosts: web_servers
+    gather_facts: false
+    become: yes
+    tasks:
+      - name: install httpd
+        yum: 
+          name: httpd
+          state: present
+        register: output
+      - name: start httpd
+        service: 
+          name: httpd
+          state: started
+        when: ouput.changed == True
