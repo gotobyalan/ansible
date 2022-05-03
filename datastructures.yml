@@ -1,5 +1,5 @@
 ---
- - hosts: localhost
+ - hosts: bogus
    vars:
     x: 34
     #pckgs: ['vim','nano','httpd','nginx']
