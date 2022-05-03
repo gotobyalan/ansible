@@ -2,8 +2,8 @@
  - hosts: localhost
    vars:
     x: 34
-    #pakgs: ['vim','nano','httpd','nginx']
-    pakgs:
+    #pckgs: ['vim','nano','httpd','nginx']
+    pckgs:
     - 'vim'
     - 'nano'
     - 'httpd'
