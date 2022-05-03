@@ -1,0 +1,7 @@
+---
+ - name: using
+   hosts: all
+   gather_facts: false
+   become: yes
+   roles: 
+     - update_repos

@@ -1,5 +1,5 @@
 ---
- - hosts: everest.homelab.com 
+ - hosts: all
    vars:
     x: 23
     my_num: 45.67

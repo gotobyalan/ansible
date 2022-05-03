@@ -1,6 +1,6 @@
 ---
   - name: install httpd
-    hosts: web_servers
+    hosts: all
     gather_facts: true
     become: yes
     #become_user: ansible
